@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            border: none;
+            background-color: #000;
+            color: #fff;
+            padding: 14px 28px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body id="bdyColor">
+    <div style="text-align: center;">
+        <h1 style="margin-bottom: 48px;">Tap the Button to Change Background Color</h1>
+        <button id="btnColor">CHANGE</button>
+    </div>
+    <script>
+        const btn = document.getElementById("btnColor");
+        const bdy = document.getElementById("bdyColor");
+        const res = document.getElementById("colorName");
+        let clr = ["#ff6b6b", "#f06595", "#cc5de8", "#845ef7", "#5c7cfa", "#339af0", "#22b8cf", "#20c997", "#51cf66", "#94d82d", "#fcc419", "#ff922b", "#20c988", "#23d997"];
+        btn.addEventListener("click", ()=> {
+            const rndm = Math.floor(Math.random() * clr.length);
+            console.log(rndm);
+            bdy.style.background = clr[rndm];
+        });
+    </script>
+</body>
+</html>
