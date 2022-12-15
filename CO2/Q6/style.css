@@ -1,25 +1,60 @@
-body{
-	font-size: 20px;
-	font-family: sans-serif;
-	color: #333;
+
+  .container {  
+    padding: 20px;  
+  background-color: #CCCCFF;  
+}  
+  
+input[type=text], input[type=password]{  
+  width: 20%;  
+  padding: 5px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline:none;  
+}  
+ div {  
+  padding: 10px 0;  
+}  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 20%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
-.question{
-	font-weight: 600;
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: #A7C7E7; 
+  justify-content: center;
+  margin-top: 1%;
+  align-items: center;
+  border: 4px ridge red;
+} 
+h2{
+  color:#8B0000;
 }
-.answers {
-    margin-bottom: 20px;
-}
-#submit{
-	font-family: sans-serif;
-	font-size: 20px;
-	background-color: #297;
-	color: #fff;
-	border: 0px;
-	border-radius: 3px;
-	padding: 20px;
-	cursor: pointer;
-	margin-bottom: 20px;
-}
-#submit:hover{
-	background-color: #3a8;
+h1{
+  color:lightcoral;
 }
