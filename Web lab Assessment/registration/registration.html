@@ -8,21 +8,20 @@
         <h1>Registration Form</h1>
 		<div class="form-container">
 		<!-- <form name="RegForm" onsubmit= " return checker()" method="post"> -->
-        <form name="RegForm" method="post">
 	<label>
-		<p>Patient Name : <input type="text"	size="65" name="Name"/></p></label>
+		<p>Patient Name : <input type="text" id="name"	size="65" name="Name"/></p></label>
 	<label>			
-		<p>Address : <input type="text" size="65" name="Address" /></p>
+		<p>Address : <input type="text" id=address size="65" name="Address" /></p>
 	</label>
     <label>
-        <p>Date of Birth : <input type="date" name="DOB" /></p>
+        <p>Date of Birth : <input type="date"  name="DOB" /></p>
     </label>
 	<label>
         <p>blood Group : <input type="text" size="65" name="blood_group" /></p>
     </label>
 
     <label>
-    <p>Department :<select type="text" value="" name="Department">
+    <p>Department :<select type="text" value="" id="department" name="Department">
 					<option>cardiology</option>
 					<option>urology</option>
 					<option>general medicine</option>
@@ -38,8 +37,7 @@
         </p>
     </label>		
     <p>
-        <button type="submit" id="btn" onclick="validation()">Submit</button> <button type="reset">Reset</button>
-		</form>
+        <button id="btn" onclick="validation()">Submit</button> <button type="reset">Reset</button>
 	</div>
 	<script src="script.js"></script>
 	</body>

@@ -1,3 +1,11 @@
+let submitBtn = document.querySelector("#go")
+submitBtn.addEventListener('click',()=>{
+    if(validation())
+        window.location.href = "./registration/registration.html"
+    else
+        console.log(false);
+
+})
 function validation() {
     var fname =
         document.getElementById("first_name").value;
