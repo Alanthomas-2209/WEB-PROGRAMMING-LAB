@@ -2,7 +2,7 @@
 $localhost = 'localhost';
 $username = 'root';
 $password = '';
-$db = 'test';
+$db = 'student';
 $conn = mysqli_connect($localhost,$username,$password,$db);
 
 if(isset($_POST['submit'])){
