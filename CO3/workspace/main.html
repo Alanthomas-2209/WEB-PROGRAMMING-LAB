@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="form_elems">
+        <form
+          action="server.php"
+          method="post"
+          onsubmit="return validateData()"
+        >
+          <div class="input_container">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="input_container">
+            <label for="department">department</label>
+            <select name="department" id="department">
+              <option value="cardiology">cardiology</option>
+              <option value="dentist">dentist</option>
+            </select>
+          </div>
+          <div class="input_container">
+            <input type="submit" value="submit" name="submit" id="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      let name = document.querySelector("#name");
+      let dept = document.querySelector("#department");
+      function validateData() {
+        let flag = true;
+        if (name.value == "") {
+          flag = false;
+          console.log("name blank");
+        }
+      }
+    </script>
+  </body>
+</html>
